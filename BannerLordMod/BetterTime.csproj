@@ -83,8 +83,12 @@
     <Compile Include="TimePanel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MapBar.xml" />
+    <Content Include="GUI\BetterTimeSpriteData.xml" />
+    <Content Include="GUI\Brushes\BetterTimeBrush.xml" />
+    <Content Include="GUI\Prefabs\Map\MapBar.xml" />
+    <Content Include="GUI\SpriteSheets\better_time_icons\better_time_icons_1.png" />
     <Content Include="SubModule.xml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
