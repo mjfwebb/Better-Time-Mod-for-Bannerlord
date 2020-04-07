@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpriteData>
+    <SpriteCategories>
+        <SpriteCategory>
+            <Name>better_time_icons</Name>
+            <SpriteSheetCount>1</SpriteSheetCount>
+            <SpriteSheetSize ID="1" Width="68" Height="22" />
+        </SpriteCategory>
+    </SpriteCategories>
+    <SpriteParts>
+        <SpritePart>
+            <SheetID>1</SheetID>
+            <Name>FastForward@4x</Name>
+            <Width>30</Width>
+            <Height>22</Height>
+            <SheetX>0</SheetX>
+            <SheetY>0</SheetY>
+            <CategoryName>better_time_icons</CategoryName>
+        </SpritePart>
+        <SpritePart>
+            <SheetID>1</SheetID>
+            <Name>FastForward@4x_selected</Name>
+            <Width>30</Width>
+            <Height>22</Height>
+            <SheetX>36</SheetX>
+            <SheetY>0</SheetY>
+            <CategoryName>better_time_icons</CategoryName>
+        </SpritePart>
+    </SpriteParts>
+    <Sprites>
+        <GenericSprite>
+            <Name>FastForward@4x</Name>
+            <SpritePartName>FastForward@4x</SpritePartName>
+        </GenericSprite>
+        <GenericSprite>
+            <Name>FastForward@4x_selected</Name>
+            <SpritePartName>FastForward@4x_selected</SpritePartName>
+        </GenericSprite>
+    </Sprites>
+</SpriteData>

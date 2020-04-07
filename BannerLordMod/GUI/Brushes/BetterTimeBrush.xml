@@ -1,0 +1,22 @@
+<Brushes>
+    <Brush Name="MapBarFastFastForwardButton">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="FastForward@4x" IsHidden="true"/>
+      <BrushLayer Name="Selected" Sprite="FastForward@4x_selected" IsHidden="true"/>
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" ColorFactor="1.0" IsHidden="false"/>
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" ColorFactor="1.5" IsHidden="false"/>
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" ColorFactor="2.0" IsHidden="false"/>
+      </Style>
+      <Style Name="Selected">
+        <BrushLayer Name="Selected" IsHidden="false"/>
+      </Style>
+    </Styles>
+  </Brush>
+</Brushes>

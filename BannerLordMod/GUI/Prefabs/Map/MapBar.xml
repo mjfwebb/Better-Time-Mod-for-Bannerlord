@@ -269,7 +269,7 @@
               </Children>
             </Widget>
 
-            <ButtonWidget Id="FastFastForwardButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="27" SuggestedHeight="24" HorizontalAlignment="Right" VerticalAlignment="Bottom" PositionXOffset="-60" PositionYOffset="-7" Brush="MapBarFastForwardButton" Command.Click="ExecuteTimeControlChange" CommandParameter.Click="2">
+            <ButtonWidget Id="FastFastForwardButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="27" SuggestedHeight="24" HorizontalAlignment="Right" VerticalAlignment="Bottom" PositionXOffset="-62" PositionYOffset="-7" Brush="MapBarFastFastForwardButton" Command.Click="ExecuteTimeControlChange" CommandParameter.Click="2">
               <Children>
                 <HintWidget DataSource="{FastFastForwardHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
               </Children>
