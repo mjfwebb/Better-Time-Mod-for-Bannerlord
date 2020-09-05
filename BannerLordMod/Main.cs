@@ -1,4 +1,6 @@
-﻿using TaleWorlds.CampaignSystem;
+﻿using SandBox.GauntletUI.Map;
+using SandBox.View.Map;
+using TaleWorlds.CampaignSystem;
 using TaleWorlds.Engine.GauntletUI;
 using TaleWorlds.InputSystem;
 using TaleWorlds.MountAndBlade;
@@ -37,6 +39,10 @@ namespace BetterTime
             UIResourceManager.BrushFactory.Initialize();
         }
 
+        private float currentSpeed;
+        private bool timeSpedUp;
+        private CampaignTimeControlMode currentTimeMode;
+
         protected override void OnApplicationTick(float dt)
         {
             if(Campaign.Current != null)
@@ -51,6 +57,27 @@ namespace BetterTime
                 if (Input.IsKeyReleased(InputKey.D3))
                 {
                     Campaign.Current.SpeedUpMultiplier = 4f;
+                }
+
+
+                var test = MapScreen.Instance?.GetMapView<GauntletMapBar>();
+                if(Input.IsKeyDown(InputKey.LeftControl) && Input.IsKeyDown(InputKey.Space))
+                {
+                    if(Campaign.Current.SpeedUpMultiplier != 8f)
+                    {
+                        currentSpeed = Campaign.Current.SpeedUpMultiplier;
+                        currentTimeMode = Campaign.Current.TimeControlMode;
+                        timeSpedUp = true;
+                    }
+                    
+                    Campaign.Current.SpeedUpMultiplier = 8f;
+                    Campaign.Current.SetTimeSpeed(2);
+                }
+                else if (timeSpedUp && (Input.IsKeyDown(InputKey.LeftControl) || Input.IsKeyDown(InputKey.Space)))
+                {
+                    timeSpedUp = false;
+                    Campaign.Current.SpeedUpMultiplier = currentSpeed;
+                    Campaign.Current.TimeControlMode = currentTimeMode;
                 }
             }
         }
