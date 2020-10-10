@@ -34,19 +34,19 @@ namespace BetterTime
                     var pac = PauseButton.ClickEventHandlers;
                     if (fffc.Count == 0)
                     {
-                        fffc.Add((a) => { Campaign.Current.SpeedUpMultiplier = 8f; });
+                        fffc.Add((a) => { Campaign.Current.SpeedUpMultiplier = Support.settings.extra_fast_forward_speed; });
                     }
                     if (ffc.Count == 0)
                     {
-                        ffc.Add((a) => { Campaign.Current.SpeedUpMultiplier = 4f; });
+                        ffc.Add((a) => { Campaign.Current.SpeedUpMultiplier = Support.settings.fast_forward_speed; });
                     }
                     if (plc.Count == 0)
                     {
-                        plc.Add((a) => { Campaign.Current.SpeedUpMultiplier = 4f; });
+                        plc.Add((a) => { Campaign.Current.SpeedUpMultiplier = Support.settings.fast_forward_speed; });
                     }
                     if (pac.Count == 0)
                     {
-                        pac.Add((a) => { Campaign.Current.SpeedUpMultiplier = 4f; });
+                        pac.Add((a) => { Campaign.Current.SpeedUpMultiplier = Support.settings.fast_forward_speed; });
                     }
                 }
 
@@ -68,7 +68,7 @@ namespace BetterTime
                     case 2:
                     case 4:
                     case 5:
-                        if (Campaign.Current.SpeedUpMultiplier == 8f)
+                        if (Campaign.Current.SpeedUpMultiplier > Support.settings.fast_forward_speed)
                         {
                             FastFastForwardButton.IsSelected = true;
                         }
