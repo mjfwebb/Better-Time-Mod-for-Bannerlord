@@ -31,11 +31,11 @@ namespace BetterTime
                     )
                 );
 
-            sd.SpriteCategories.Add("better_time_icons", spriteData.SpriteCategories["better_time_icons"]);
-            sd.SpritePartNames.Add("FastForward@4x", spriteData.SpritePartNames["FastForward@4x"]);
-            sd.SpriteNames.Add("FastForward@4x", new SpriteGeneric("FastForward@4x", spriteData.SpritePartNames["FastForward@4x"]));
-            sd.SpritePartNames.Add("FastForward@4x_selected", spriteData.SpritePartNames["FastForward@4x_selected"]);
-            sd.SpriteNames.Add("FastForward@4x_selected", new SpriteGeneric("FastForward@4x", spriteData.SpritePartNames["FastForward@4x_selected"]));
+            //sd.SpriteCategories.Add("better_time_icons", spriteData.SpriteCategories["better_time_icons"]);
+            //sd.SpritePartNames.Add("FastForward@4x", spriteData.SpritePartNames["FastForward@4x"]);
+            //sd.SpriteNames.Add("FastForward@4x", new SpriteGeneric("FastForward@4x", spriteData.SpritePartNames["FastForward@4x"]));
+            //sd.SpritePartNames.Add("FastForward@4x_selected", spriteData.SpritePartNames["FastForward@4x_selected"]);
+            //sd.SpriteNames.Add("FastForward@4x_selected", new SpriteGeneric("FastForward@4x", spriteData.SpritePartNames["FastForward@4x_selected"]));
 
             var bettertimeicons = sd.SpriteCategories["better_time_icons"];
             bettertimeicons.SpriteSheets.Add(texture);

@@ -1,0 +1,12 @@
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!--Base fast forward speed. Base game value is 4-->
+    <fast_forward_speed>4</fast_forward_speed>
+
+    <!--Speed value for the Better Time speed button.-->
+    <extra_fast_forward_speed>8</extra_fast_forward_speed>
+
+    <!--Speed value for holding ctrl + space-->
+    <ctrl_space_speed>12</ctrl_space_speed>
+
+</Settings>
